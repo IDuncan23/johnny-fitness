@@ -1,0 +1,955 @@
+
+/*•••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••
+•••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••
+GLOBAL CSS STYLING
+•••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••
+••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••*/
+
+body{
+  font-family: 'Roboto Condensed', sans-serif;
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  padding: 0px;
+  margin: 0px;
+  width: 100%;
+}
+
+a {
+  text-decoration: none;
+  color: #FFF;
+}
+
+h2{
+  margin-bottom: 5px;
+  border-bottom: 3px solid #000;
+}
+h3{
+  color: #FFF;
+}
+
+/* for items wish to be floated */
+.float{
+  float: left;
+}
+
+/*****************************************
+ HEADER STYLING
+*****************************************/
+
+/* keeps fixed nav at top of window  */
+.nav-container{
+  z-index: 100;
+  position: fixed;
+  width: 100%;
+  height: 90px;
+  top: 0;
+  overflow: hidden;
+  background-color: #128080;
+}
+
+/*----------------------------------------
+ NAVIGATION STYLING
+----------------------------------------*/
+
+/* contains nav */
+.main-nav{
+  display: block;
+  float: left;
+}
+
+/* styles the links in nav bar */
+.link{
+  display: inline-block;
+  float: left;
+  background-color: #128080;
+  padding: 30px 35px 30px 35px;
+  font-size: 1.5em;
+  color: #FFF;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  transition: ease 400ms;
+}
+/* styles hover over links in nav bar */
+.link:hover{
+  background-color: #FFF;
+  color: #128080;
+}
+
+/* div positioning for logo */
+.logo{
+  z-index: 100;
+  display: block;
+  position: absolute;
+  right: 0;
+  margin: 0px 20px 0 0;
+}
+
+/*****************************************
+FOOTER STYLING
+*****************************************/
+
+/* container for footer nav */
+.main-footer{
+  z-index: 100;
+  overflow: hidden;
+  position: absolute;
+  bottom: 0px;
+  width: 100%;
+  height: 30px;
+  background-color: #128080;
+  color: #FFF;
+  font-size: 14px;
+}
+
+.footer-nav{
+  display: inline-block;
+  float: left;
+  margin-top: 7px;
+  margin-left: 10px;
+}
+
+.footer-nav a{
+  margin-left: 10px;
+}
+
+.copyright{
+  display: inline-block;
+  position: absolute;
+  right: 0;
+  margin-top: 7px;
+  margin-right: 10px;
+}
+
+
+/*•••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••
+•••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••
+INDEX PAGE CSS STYLING
+•••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••
+••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••*/
+
+/*----------------------------------------
+ HEADER / QUOTE STYLING
+----------------------------------------*/
+
+/* styles header section of webpage following nav bar */
+.quote-section{
+  margin-top: 50px;
+  width: 100%;
+  height: 450px;
+  background-color: #128080;
+  text-align: right;
+}
+
+/* sets the position of the header quote */
+.header-quote-container{
+  position: absolute;
+  top: 200px;
+  left: 5%;
+  width: 35%;
+  text-align: center;
+}
+
+/* styles the header quote text */
+.big-quote{
+  display: inline-block;
+  color: #FFF;
+  font-size: 40px;
+  font-weight: bolder;
+  margin-bottom: 20px;
+}
+
+/* sets position of the header picture */
+.header-picture-container{
+  overflow: visible;
+  position: absolute;
+  top: 125px;
+  right: 10%;
+  width: 35%;
+  height: auto;
+  max-height: 600px;
+  outline: 5px solid #FFE033;
+  outline-offset: -15px;
+}
+
+/*----------------------------------------
+ SOCIAL MEDIA LINKS STYLING
+----------------------------------------*/
+
+/* container for social media section within the header */
+.header-socialmedia{
+  display: inline-block;
+}
+
+/* social media button design */
+.fb{
+  display: inline-block;
+  float: left;
+  height: 50px;
+  width: 50px;
+  border-radius: 30px;
+  border: 2px solid #FFF;
+  margin: 5px;
+  background: url('../../images/fb-white.png');
+  background-repeat: no-repeat;
+  background-size: 50px 50px;
+  background-position: center center;
+  transition: ease 800ms;
+}
+.fb:hover{
+  background: url('../../images/fb-green.png');
+  background-color: #FFF;
+  background-size: 50px 50px;
+  background-position: center 50px;
+}
+
+.yt{
+  display: inline-block;
+  float: left;
+  height: 50px;
+  width: 50px;
+  border-radius: 30px;
+  border: 2px solid #FFF;
+  margin: 5px;
+  background: url('../../images/yt-white.png');
+  background-repeat: no-repeat;
+  background-size: 50px 50px;
+  background-position: center center;
+  transition: ease 800ms;
+}
+.yt:hover{
+  background: url('../../images/yt-green.png');
+  background-color: #FFF;
+  background-size: 50px 50px;
+  background-position: center 50px;
+}
+
+.ig{
+  display: inline-block;
+  float: left;
+  height: 50px;
+  width: 50px;
+  border-radius: 30px;
+  border: 2px solid #FFF;
+  margin: 5px;
+  background: url('../../images/ig-white.png');
+  background-repeat: no-repeat;
+  background-size: 50px 50px;
+  background-position: center center;
+  transition: ease 800ms;
+}
+.ig:hover{
+  background: url('../../images/ig-green.png');
+  background-color: #FFF;
+  background-size: 50px 50px;
+  background-position: center 50px;
+}
+
+.twitter{
+  display: inline-block;
+  float: left;
+  height: 50px;
+  width: 50px;
+  border-radius: 30px;
+  border: 2px solid #FFF;
+  margin: 5px;
+  background: url('../../images/twitter-white.png');
+  background-repeat: no-repeat;
+  background-size: 50px 50px;
+  background-position: center center;
+  transition: ease 800ms;
+}
+.twitter:hover{
+  background: url('../../images/twitter-green.png');
+  background-color: #FFF;
+  background-size: 50px 50px;
+  background-position: center 50px;
+}
+
+/*----------------------------------------
+IMAGES ANIMATION STYLING
+----------------------------------------*/
+
+/* animation that changes margin value */
+@keyframes scroll-in {
+  from {margin-left: -2000px;}
+    to {margin-left: 0px;}
+}
+/* element calls scroll-in animation */
+.scroll-in-element{
+  animation: scroll-in 1.4s;
+}
+/* hides initial animated items */
+.hidden{
+  opacity: 0;
+}
+
+/*----------------------------------------
+ SERVICES STYLING
+----------------------------------------*/
+
+/* styles the heading of the 2nd section of the home page, about fitness */
+.services-section{
+  max-height: 900px;/* sets height of ftiness section */
+  padding: 2%;
+}
+.services-section-heading{
+  display: block;
+  margin: 10px 0px 70px 20px;/* adds space between heading and quote */
+  font-size: 100px;
+  font-weight: bolder;
+  width: 50%;
+  /* background-color: #000; test the width of the heading*/
+}
+.services-quote{
+  display: block;
+  text-align: center;
+  width: 70%;
+  margin: auto;
+  font-size: 60px;
+  font-style: italic;
+  margin-bottom: 50px;/* adds space between quote and services */
+}
+.services-list{
+  overflow: hidden;
+}
+.service-block{
+  max-height: 400px;
+  overflow: hidden;
+  float: left;
+  margin-left: 5.5%;
+  margin-right: 20px;
+  width: 25%;
+  height: auto;
+}
+
+.services-section img{
+  outline: 5px solid #FFE033;
+  outline-offset: -15px;
+}
+
+/*----------------------------------------
+MEAL PREP SECTION
+----------------------------------------*/
+
+.mealprep-section{
+  overflow: hidden;
+  background-color: #FFE033;
+  background-size: 100%;
+}
+.mealprep-section-heading{
+  display: block;
+  position: relative;
+  top: 0px;
+  left: 0px;
+  width: 90%;
+  text-align: right;
+  padding-top: 30px;
+  margin: 10px 0px 30px 60px;/* adds space between heading and quote */
+  font-size: 100px;
+  font-weight: bolder;
+  color: #FFF;
+  /* background-color: #000; test the width of the heading*/
+}
+.mealprep-images{
+  display: block;
+  text-align: center;
+  width: 45%;
+  margin: 0 auto;
+  float: left;
+}
+
+.mealprep-section img{
+  max-width: 250px;
+  max-height: 250px;
+  width: 40%;
+  height: auto;
+  outline: 5px solid #FFE033;
+  outline-offset: -15px;
+  margin-right: 25px;
+  margin-bottom: 25px;
+}
+
+.mealprep-content{
+  width: 45%;
+  float: left;
+}
+.mealprep-quote{
+  display: block;
+  color: #FFF;
+  font-size: 40px;
+  font-weight: bolder;
+  text-align: center;
+  margin-top: 30px;
+  margin-bottom: 70px;
+}
+.mealprep-section ul{
+  text-align: center;
+}
+.mealprep-section li{
+  margin-top: 10px;
+  margin-bottom: 50px;
+}
+.mealprep-section a{
+  font-size: 30px;
+  padding: 10px 15px 10px 15px;
+  border: 2px solid #FFF;
+}
+
+/*----------------------------------------
+ABOUT SECTION STYLING
+----------------------------------------*/
+
+.about-section{
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  /* background: url('../temp-images/philly2.gif') no-repeat; */
+  background-color: #000;
+  background-size: 100%;
+  color: #FFF;
+}
+
+.about-section-heading{
+  display: block;
+  position: relative;
+  top: 0px;
+  left: 0px;
+  width: 90%;
+  text-align: right;
+  padding-top: 20px;
+  margin: 10px 0px 30px 60px;/* adds space between heading and quote */
+  font-size: 100px;
+  font-weight: bolder;
+  color: #FFF;
+  /* background-color: #000; test the width of the heading*/
+}
+
+.about-picture{
+  display: block;
+  position: absolute;
+  bottom: 0;
+  display: block;
+  width: 45%;
+  float: left;
+  margin-bottom: -5px;
+}
+
+.about-section img{
+  position: relative;
+  width: 100%;
+  height: auto;
+  margin-bottom: 0px;
+  padding-bottom: 0px;
+
+}
+.about-content{
+  display: inline-block;
+  margin-left: 45%;
+  text-align: center;
+  width: 40%;
+  float: left;
+  padding-top: 25px;
+}
+.about-quote{
+  display: block;
+  color: #FFF;
+  font-size: 40px;
+  font-weight: bolder;
+  text-align: center;
+  margin-top: 30px;
+  margin-bottom: 40px;
+}
+.about-section a{
+  display: inline-block;
+  font-size: 30px;
+  padding: 10px 15px 10px 15px;
+  border: 2px solid #FFF;
+  margin-bottom: 40px;
+}
+
+/*•••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••
+•••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••
+ABOUT PAGE CSS STYLING
+•••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••
+••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••*/
+
+.about-page{
+  z-index: 1;
+  display: block;
+  padding-top: 90px;
+  width: 100%;
+  min-height: 100vh;
+  background-color: #000;
+  color: #FFF;
+}
+
+.about-content-container{
+  overflow: auto;
+  width: 90%;
+  margin: 0 auto;
+  padding: 1%;
+  /* background-color: red; div location test */
+}
+
+.about-page-heading{
+  display: block;
+  position: relative;
+  top: 0px;
+  left: 0px;
+  width: 90%;
+  text-align: right;
+  padding-top: 20px;
+  margin: 10px 0px 30px 60px;/* adds space between heading and quote */
+  font-size: 100px;
+  font-weight: bolder;
+  color: #FFF;
+  border-bottom: 5px solid #FFE033;
+  /* background-color: #000; test the width of the heading*/
+}
+
+.about-page-picture{
+  display: inline-block;
+  width: 30%;
+  float: left;
+}
+
+.about-page img{
+  width: 100%;
+  height: auto;
+
+}
+.about-page-content{
+  display: inline-block;
+  width: 65%;
+  color: #FFF;
+  font-size: 30px;
+  margin-left: 10px;
+  /* background-color: blue; div location test */
+}
+
+
+/*-•••••••••••••••••••••••••••••••••••••••
+••••••••••••••••••••••••••••••••••••••••••
+FITNESS PAGE CSS STYLING
+••••••••••••••••••••••••••••••••••••••••••
+•••••••••••••••••••••••••••••••••••••••••*/
+
+.fitness-page{
+  z-index: 1;
+  display: block;
+  padding-top: 90px;/* offset from fixed nav bar */
+  padding-bottom: 30px;/* offset from fixed footer bar */
+  width: 100%;
+  min-height: 100vh;
+  background-color: #FFF;
+  color: #000;
+}
+
+.fitness-content-container{
+  overflow: auto;
+  width: 90%;
+  height: auto;
+  margin: 0 auto;
+  padding: 1%;
+}
+
+.fitness-plan{
+  overflow: hidden;
+  display: block;
+  width: 33%;
+  height: 350px;
+  margin: 10px 0 20px 0;
+  float: left;
+}
+
+.fitness-plan-heading{
+  display: block;
+  width: 100%;
+  text-align: center;
+  margin: 5px 5px 5px 5px;
+  font-size: 50px;
+  font-weight: bolder;
+  color: #000;
+  border-bottom: 4px solid #128080;
+}
+
+.fitness-page-picture{
+  display: inline-block;
+  width: 30%;
+  float: left;
+}
+
+.fitness-page img{
+  width: 100%;
+  height: auto;
+
+}
+.fitness-page-content{
+  display: inline-block;
+  color: #000;
+  font-size: 30px;
+  text-align: center;
+}
+
+.fitness-page .anchor{
+  color: #000;
+}
+
+.fitness-prices-section{
+  display: block;
+  /* background-color: red; test div location*/
+  width: 100%;
+  height: 310px;
+  float: left;
+  margin-bottom: 20px;
+  border: 2px solid #128080;
+}
+
+.fitness-prices-heading{
+  display: block;
+  float: left;
+  width: 45%;
+  height: 100%;
+  background-color: #128080;
+  line-height: 100px;
+  text-align: center;
+  color: #FFF;
+  font-size: 50px;
+  font-weight: bolder;
+}
+.fitness-prices-content{
+  display: block;
+  float: left;
+  width: 45%;
+  padding-left: 45px;
+  vertical-align: middle;
+  line-height: 30px;
+  font-size: 40px;
+  font-weight: bolder;
+  /* background-color: green; test div location */
+}
+.fitness-desc{
+  font-size: 20px;
+}
+
+.fitness-page a{
+  color: #128080;
+}
+.fitness-page a:hover {
+  color: #128080;
+  text-decoration: underline;
+  font-style: normal;
+}
+
+.slideshow-container{
+  margin-bottom: 20px;
+}
+* {box-sizing:border-box}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+/* Hide the images by default */
+.mySlides {
+    display: none;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+/*•••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••
+•••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••
+MEALPREP PAGE CSS STYLING
+•••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••
+••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••*/
+
+.mealprep-page{
+  z-index: 1;
+  display: block;
+  padding-top: 90px;/* offset from fixed nav bar */
+  padding-bottom: 30px;/* offset from fixed footer bar */
+  width: 100%;
+  min-height: 100vh;
+  background-color: #FFE033;
+  color: #000;
+}
+
+.mealprep-content-container{
+  overflow: auto;
+  width: 90%;
+  margin: 0 auto;
+  padding: 1%;
+}
+
+.mealprep-plan{
+  overflow: hidden;
+  display: block;
+  width: 70%;
+  margin: 0 auto;
+  margin-bottom: 20px;
+}
+
+.mealprep-desc{
+  text-align: center;
+  color: #FFF;
+  font-size: 23px;
+}
+.mealprep-desc a{
+  background-color: #128080;
+  color: #FFF;
+  padding: 0px 3px 0px 3px;
+}
+.mealprep-desc a:hover{
+  background-color: #FFE033;
+  color: #FFF;
+  padding: 0px 3px 0px 3px;
+  text-decoration: underline;
+}
+
+.mealprep-plan-heading{
+  display: block;
+  width: 90%;
+  text-align: right;
+  margin: 5px 0px 5px 0px;
+  font-size: 50px;
+  font-weight: bolder;
+  text-transform: uppercase;
+  color: #FFF;
+}
+
+.mealprep-plan-picture{
+  display: block;
+  float: left;
+  width: 300px;
+  height: 300px;
+  content: '';
+  background-color: red;
+}
+
+.lowcarb{
+  background: url('../../images/meal-lowcarb1.jpg');
+  background-position: center;
+  background-size: 450px;
+}
+.vegetarian{
+  background: url('../../images/meal_vegetarian1.jpg');
+  background-position: center;
+  background-size: 450px;
+}
+.vegan{
+  background: url('../../images/meal-vegan1.jpg');
+  background-position: center;
+  background-size: 450px;
+}
+
+.mealprep-plan-content{
+  overflow: auto;
+  display: block;
+  border: 5px solid #FFF;
+  background-color: #FFF;
+  width: 500px;
+  height: 290px;
+}
+
+.mealprep-plan-content p{
+  margin: 25px;
+  font-size: 40px;
+  font-weight: bolder;
+  letter-spacing: 1px;
+  color: #000;
+}
+
+.mealprep-page-picture{
+  display: inline-block;
+  width: 30%;
+  float: left;
+}
+
+.mealprep-page img{
+  width: 100%;
+  height: auto;
+
+}
+.mealprep-page-content{
+  display: inline-block;
+  width: 65%;
+  color: #FFF;
+  font-size: 30px;
+  margin-left: 5px;
+}
+
+/*•••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••
+•••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••
+CONTACT PAGE CSS STYLING
+•••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••
+••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••*/
+
+.contact-page{
+  z-index: 1;
+  display: block;
+  padding-top: 90px;/* offset from fixed nav bar */
+  padding-bottom: 30px;/* offset from fixed footer bar */
+  width: 100%;
+  min-height: 100vh;
+  background-color: #128080;
+  color: #000;
+}
+
+.contact-desc{
+  text-align: center;
+  color: #FFF;
+  font-size: 23px;
+}
+.contact-desc a{
+  background-color: #128080;
+  color: #FFF;
+  padding: 0px 3px 0px 3px;
+}
+.contact-desc a:hover{
+  background-color: #FFE033;
+  color: #FFF;
+  padding: 0px 3px 0px 3px;
+  text-decoration: underline;
+}
+
+.contact-heading{
+  display: block;
+  position: relative;
+  top: 0px;
+  left: 0px;
+  width: 90%;
+  text-align: right;
+  padding-top: 20px;
+  margin: 10px 0px 30px 60px;/* adds space between heading and quote */
+  font-size: 100px;
+  font-weight: bolder;
+  color: #FFF;
+  /* background-color: #000; test the width of the heading*/
+}
+
+.contact-page img{
+  width: 100%;
+  height: auto;
+}
+.contact-form-container{
+  display: inline-block;
+  width: 100%;
+  font-size: 30px;
+  margin-left: 5px auto;
+  /* background-color: red; */
+}
+
+form{
+  display: block;
+  text-align: center;
+  width: 70%;
+  /* background-color: #f0f; */
+  padding: 20px;
+  margin: 0 auto;
+}
+
+form input[type=text], form input[type=email] {
+  width: 39%;
+  border: 3px solid black;
+  border-radius: 10px;
+  text-align: center;
+  margin-bottom: 10px;
+}
+form textarea{
+  width: 79%;
+  height: 300px;
+  border: 3px solid black;
+  border-radius: 10px;
+  padding: 10px;
+}
+form input[type=submit]{
+  width: 79%;
+  border: 3px solid black;
+  border-radius: 10px;
+  background-color: #128080;
+  color: #FFF;
+  text-transform: uppercase;
+  letter-spacing: 15px;
+}
